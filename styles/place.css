@@ -1,0 +1,82 @@
+:root {
+   --primary-color: #d71a28; /* Red from Madagascar flag */
+   --secondary-color: #007a33; /* Green from Madagascar flag */
+   --background-color: #ffffff;
+   --text-color: #000000;
+   --heading-bg: #007a33; /* Matching heading background */
+   --heading-text: #ffffff; /* White text for contrast */
+ }
+
+ body {
+   font-family: Arial, sans-serif;
+   background-color: var(--background-color);
+   color: var(--text-color);
+   margin: 0;
+   padding: 0;
+ }
+
+ header {
+   background-color: var(--primary-color);
+   color: var(--background-color);
+   text-align: center;
+   padding: 1rem;
+ }
+
+ main {
+   display: flex;
+   justify-content: space-around;
+   padding: 1rem;
+   background-image: url('https://images.unsplash.com/photo-1656163157901-8715e42adeb4?q=80&w=2667&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   min-height: 70vh;
+ }
+
+ section {
+   background-color: rgba(255, 255, 255, 0.8);
+   padding: 1rem;
+   border-radius: 8px;
+   width: 25%;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+ }
+
+ h2 {
+   background-color: var(--heading-bg);
+   color: var(--heading-text);
+   padding: 0.75rem;
+   border-radius: 4px;
+   text-align: center;
+   font-size: 1.5rem;
+   text-transform: uppercase;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.weather h2::after {
+   content: '\26C5'; /* Unicode for partly cloudy icon */
+   margin-left: 10px;
+}
+
+ .data ul li {
+   padding: 0.5rem 0;
+   border-bottom: 1px solid #ccc;
+ }
+
+ footer {
+   background-color: var(--primary-color);
+   color: var(--background-color);
+   text-align: center;
+   padding: 0.5rem;
+ }
+
+ @media (max-width: 768px) {
+   main {
+     flex-direction: column;
+     align-items: center;
+   }
+
+   section {
+     width: 90%;
+     margin-bottom: 1rem;
+   }
+ }
