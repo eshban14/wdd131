@@ -23,7 +23,10 @@ nav {
    padding: 0;
    margin: 0;
 }
-
+#nav-menu a:hover {
+   color: #007BFF; 
+   text-decoration: underline;
+}
 #nav-menu li {
    list-style-type: none;
 }
