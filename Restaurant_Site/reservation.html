@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Raees Food - Book your table today.">
+    <meta name="author" content="Eshban Younis">
+    <title>Raees Food - Reservation</title>
+    <link rel="stylesheet" href="styles/reservation.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+      <nav>
+          <div class="logo">Raees Food</div>
+          <!-- Hamburger Icon -->
+          <div class="hamburger" id="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+          </div>
+          <!-- Navigation Menu -->
+          <ul class="nav-links" id="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="reservation.html">Reservation</a></li>
+          </ul>
+      </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+      <!-- Reservation Form Section -->
+      <section class="reservation-form">
+          <div class="form-container">
+              <h2>Book Your Table</h2>
+              <p>Reserve your table at Raees Food and enjoy an unforgettable dining experience.</p>
+              <form id="reservationForm">
+               <div class="form-group">
+                   <label for="name">Name:</label>
+                   <input type="text" id="name" name="name" placeholder="Enter your name" required>
+               </div>
+               <div class="form-group">
+                   <label for="email">Email:</label>
+                   <input type="email" id="email" name="email" placeholder="Enter your email" required>
+               </div>
+               <div class="form-group">
+                   <label for="date">Date:</label>
+                   <input type="date" id="date" name="date" required>
+               </div>
+               <div class="form-group">
+                   <label for="time">Time:</label>
+                   <input type="time" id="time" name="time" required>
+               </div>
+               <div class="form-group">
+                   <label for="persons">How Many Persons:</label>
+                   <input type="number" id="persons" name="persons" placeholder="Enter number of persons" min="1" required>
+               </div>
+               <button type="submit" class="btn">Submit</button>
+           </form>
+              <p id="confirmationMessage"></p>
+          </div>
+      </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+   <p>2025 Eshban Younis</p>
+   <p>Raees Food</p>
+   <p>Last Modification: 02/26/2024 13:56:10</p>
+</footer>
+</div>
+<script src="scripts/reservation.js" defer></script>
+</body>
+</html>

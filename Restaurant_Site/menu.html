@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Raees Food - Explore our full menu.">
+    <meta name="author" content="Eshban Younis">
+    <title>Raees Food - Menu</title>
+    <link rel="stylesheet" href="styles/menu.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+      <nav>
+          <div class="logo">Raees Food</div>
+          <!-- Hamburger Icon -->
+          <div class="hamburger" id="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+          </div>
+          <!-- Navigation Menu -->
+          <ul class="nav-links" id="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="reservation.html">Reservation</a></li>
+          </ul>
+      </nav>
+  </header>
+
+    <!-- Full Menu Section -->
+    <section class="full-menu">
+        <h2>Our Full Menu</h2>
+        <div class="filter-options">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="appetizers">Appetizers</button>
+            <button class="filter-btn" data-category="main-courses">Main Courses</button>
+            <button class="filter-btn" data-category="desserts">Desserts</button>
+            <button class="filter-btn" data-category="beverages">Beverages</button>
+            <button class="filter-btn" data-category="specials">Specials</button>
+        </div>
+        <div class="menu-grid">
+            <!-- Appetizers -->
+            <div class="menu-item" data-category="appetizers">
+                <img src="images/bru.avif" alt="Bruschetta" loading="lazy">
+                <h3>Bruschetta</h3>
+                <p>Toasted bread topped with fresh tomatoes, basil, and mozzarella.</p>
+            </div>
+            <div class="menu-item" data-category="appetizers">
+                <img src="images/spring_rolls.avif" alt="Spring Rolls" loading="lazy">
+                <h3>Spring Rolls</h3>
+                <p>Crispy rolls filled with vegetables and served with sweet chili sauce.</p>
+            </div>
+            <!-- Main Courses -->
+            <div class="menu-item" data-category="main-courses">
+                <img src="images/grilled salmon.avif" alt="Grilled Salmon" loading="lazy">
+                <h3>Grilled Salmon</h3>
+                <p>Freshly grilled salmon served with a side of seasonal vegetables.</p>
+            </div>
+            <div class="menu-item" data-category="main-courses">
+                <img src="images/beef.avif" alt="Beef Wellington" loading="lazy">
+                <h3>Beef Wellington</h3>
+                <p>Tender beef fillet wrapped in puff pastry, served with a rich red wine sauce.</p>
+            </div>
+            <!-- Desserts -->
+            <div class="menu-item" data-category="desserts">
+                <img src="images/choco cake.avif" alt="Chocolate Lava Cake" loading="lazy">
+                <h3>Chocolate Lava Cake</h3>
+                <p>Warm chocolate cake with a gooey molten center, served with vanilla ice cream.</p>
+            </div>
+            <div class="menu-item" data-category="desserts">
+                <img src="images/cheese cake.avif" alt="Cheesecake" loading="lazy">
+                <h3>Cheesecake</h3>
+                <p>Creamy cheesecake with a graham cracker crust, topped with fresh berries.</p>
+            </div>
+            <!-- Beverages -->
+            <div class="menu-item" data-category="beverages">
+                <img src="images/mojito.avif" alt="Mojito" loading="lazy">
+                <h3>Mojito</h3>
+                <p>Refreshing mint and lime cocktail with a splash of soda.</p>
+            </div>
+            <div class="menu-item" data-category="beverages">
+                <img src="images/iced coffe.avif" alt="Iced Coffee" loading="lazy">
+                <h3>Iced Coffee</h3>
+                <p>Chilled coffee with milk and a hint of vanilla.</p>
+            </div>
+            <!-- Specials -->
+            <div class="menu-item" data-category="specials">
+                <img src="images/pasta.avif" alt="Truffle Pasta" loading="lazy">
+                <h3>Truffle Pasta</h3>
+                <p>Pasta tossed in a creamy truffle sauce with parmesan cheese.</p>
+            </div>
+            <div class="menu-item" data-category="specials">
+                <img src="images/lobster.avif" alt="Lobster Bisque" loading="lazy">
+                <h3>Lobster Bisque</h3>
+                <p>Rich and creamy lobster soup with a touch of sherry.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>2025 Eshban Younis</p>
+      <p>Raees Food</p>
+      <p>Last Modification: 02/26/2024 13:56:10</p>
+  </footer>
+</div>
+<script src="scripts/menu.js" defer></script>
+</body>
+</html>

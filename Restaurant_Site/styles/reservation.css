@@ -1,0 +1,229 @@
+/* General Styles */
+body {
+   font-family: 'Georgia', serif;
+   background-color: #f4f1ea;
+   color: #3e2723;
+   margin: 0;
+   padding: 0;
+   line-height: 1.6;
+}
+
+h1, h2, h3 {
+   font-family: 'Helvetica', sans-serif;
+   color: #d32f2f;
+}
+
+a {
+   color: #388e3c;
+   text-decoration: none;
+}
+
+/* Header Styles */
+header {
+   background-color: #3e2723;
+   color: white;
+   padding: 20px;
+}
+
+header .logo {
+   font-size: 1.5rem;
+   font-weight: bold;
+}
+
+nav {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+nav ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   display: flex;
+}
+
+nav ul li {
+   margin: 0 15px;
+}
+
+nav ul li a {
+   color: white;
+   font-weight: bold;
+   text-decoration: none;
+   transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+   color: #d32f2f;
+}
+
+/* Hamburger Icon */
+.hamburger {
+   display: none; /* Hidden by default */
+   flex-direction: column;
+   cursor: pointer;
+}
+
+.hamburger span {
+   width: 25px;
+   height: 3px;
+   background-color: white;
+   margin: 4px 0;
+   transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Mobile Menu Styles */
+@media (max-width: 768px) {
+   .hamburger {
+       display: flex; /* Show hamburger on mobile */
+   }
+
+   .nav-links {
+      z-index: 999;
+       position: absolute;
+       top: 70px; /* Adjust based on header height */
+       left: 0;
+       width: 100%;
+       background-color: #3e2723;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       max-height: 0;
+       overflow: hidden;
+       transition: max-height 0.5s ease;
+   }
+
+   .nav-links.active {
+       max-height: 300px; /* Adjust based on content */
+   }
+
+   .nav-links li {
+       margin: 15px 0;
+   }
+
+   /* Hamburger Animation */
+   .hamburger.active span:nth-child(1) {
+       transform: rotate(45deg) translate(5px, 5px);
+   }
+
+   .hamburger.active span:nth-child(2) {
+       opacity: 0;
+   }
+
+   .hamburger.active span:nth-child(3) {
+       transform: rotate(-45deg) translate(5px, -5px);
+   }
+}
+
+/* Reservation Form Section */
+.reservation-form {
+   padding: 40px 20px;
+   background-color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 70vh;
+}
+
+.form-container {
+   max-width: 600px;
+   width: 100%;
+   background-color: #fff;
+   padding: 30px;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   text-align: center;
+}
+
+.form-container h2 {
+   font-size: 2rem;
+   margin-bottom: 10px;
+}
+
+.form-container p {
+   font-size: 1.1rem;
+   margin-bottom: 20px;
+   color: #555;
+}
+
+.form-group {
+   margin-bottom: 20px;
+   text-align: left;
+}
+
+.form-group label {
+   display: block;
+   font-size: 1rem;
+   margin-bottom: 5px;
+   color: #3e2723;
+}
+
+.form-group input {
+   width: 100%;
+   padding: 10px;
+   font-size: 1rem;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   background-color: #f9f9f9;
+   transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+   border-color: #d32f2f;
+   outline: none;
+}
+
+.btn {
+   background-color: #d32f2f;
+   color: white;
+   padding: 10px 20px;
+   border: none;
+   border-radius: 5px;
+   font-size: 1.1rem;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+   background-color: #388e3c;
+}
+
+#confirmationMessage {
+   margin-top: 20px;
+   font-size: 1rem;
+   color: #388e3c;
+}
+
+/* Footer */
+footer {
+   background-color: #3e2723;
+   color: white;
+   text-align: center;
+   padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+   .reservation-form {
+       padding: 20px;
+   }
+
+   .form-container {
+       padding: 20px;
+   }
+
+   header {
+       flex-direction: column;
+       text-align: center;
+   }
+
+   nav ul {
+       flex-direction: column;
+       margin-top: 10px;
+   }
+
+   nav ul li {
+       margin: 10px 0;
+   }
+}
